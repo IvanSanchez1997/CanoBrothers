@@ -1,0 +1,20 @@
+{
+    "Granizados": [
+        {
+            "name": "Canario",
+            "alert": "Casero",
+            "allergensImg": [
+                "assets\/img\/allergens\/lactose.svg"
+            ],
+            "allergensDes": "Lactose",
+            "description": "Limón con bola de nata",
+            "price1": "1,80€",
+            "price2": "2,50€",
+            "price3": "3,00€",
+            "img": "assets\/img\/products\/1756899018_ccf4e0450894.svg"
+        }
+    ],
+    "Helados": [],
+    "Batidos": [],
+    "Bebidas": []
+}
