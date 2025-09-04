@@ -9,11 +9,22 @@ document.addEventListener("DOMContentLoaded", () => {
       Object.keys(data).forEach((categoria, index) => {
         const btn = document.createElement("button");
 /*        btn.className = `btn btn-outline-primary ${index === 0 ? "active" : ""}`;*/
-        btn.className = `btn btn-outline-primary type="button"`;
+        btn.className = `btn btn-primary type="button"`;
         btn.textContent = categoria;
         btn.onclick = () => mostrarCategoria(categoria, data);
         filtros.appendChild(btn);
       });
+
+      //Mostrar categoría en otra página
+      function mostrarCategoria(categoria, data) {
+                    localStorage.setItem('categoriaSeleccionada', categoria);
+                    localStorage.setItem('data', JSON.stringify(data));
+                    window.location.href = 'productos.html';
+      }
+
+
+      /*
+
 
       // Mostrar primera categoría por defecto
       mostrarCategoria(Object.keys(data)[0], data);
@@ -102,6 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(error => {
       console.error("Error cargando el menú:", error);
       document.getElementById("menu-container").innerHTML =
-        `<p class="text-danger">No se pudo cargar el menú. Revisa el archivo menu.json.</p>`;
+        `<p class="text-danger">No se pudo cargar el menú. Revisa el archivo menu.json.</p>`;*/
     });
 });
