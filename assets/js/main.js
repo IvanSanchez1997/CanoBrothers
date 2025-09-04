@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // Crear botones de categoría
       Object.keys(data).forEach((categoria, index) => {
         const btn = document.createElement("button");
-        btn.className = `btn btn-outline-primary ${index === 0 ? "active" : ""}`;
+/*        btn.className = `btn btn-outline-primary ${index === 0 ? "active" : ""}`;*/
+        btn.className = `btn btn-outline-primary type="button"`;
         btn.textContent = categoria;
         btn.onclick = () => mostrarCategoria(categoria, data);
         filtros.appendChild(btn);
