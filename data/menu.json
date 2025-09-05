@@ -12,6 +12,17 @@
             "price2": "2,50€",
             "price3": "3,00€",
             "img": "assets\/img\/products\/1756899018_ccf4e0450894.svg"
+        },
+        {
+            "name": "Blanco y Negro",
+            "alert": "",
+            "allergensImg": [],
+            "allergensDes": "",
+            "description": "GRANIZADO DE CAFE CON BOLA DE HELADO",
+            "price1": "2.6",
+            "price2": "",
+            "price3": "",
+            "img": ""
         }
     ],
     "Helados": [],

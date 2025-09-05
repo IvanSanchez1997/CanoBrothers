@@ -19,8 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
       function mostrarCategoria(categoria, data) {
                     localStorage.setItem('categoriaSeleccionada', categoria);
                     localStorage.setItem('data', JSON.stringify(data));
-                    window.location.href = 'productos.html';
-      }
+                    window.location.href = 'productos.html';  
+
+      }   
+    });
+});
 
 
       /*
@@ -114,5 +117,4 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error cargando el menú:", error);
       document.getElementById("menu-container").innerHTML =
         `<p class="text-danger">No se pudo cargar el menú. Revisa el archivo menu.json.</p>`;*/
-    });
-});
+
