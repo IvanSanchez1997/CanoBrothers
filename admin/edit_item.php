@@ -40,6 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $item['description'] = trim($_POST['description']);
     $item['alert'] = trim($_POST['alert']);
     $item['allergensDes'] = trim($_POST['allergensDes']);
+    $item['singlePrice'] = trim($_POST['singlePrice']);
     $item['price1'] = trim($_POST['price1']);
     $item['price2'] = trim($_POST['price2']);
     $item['price3'] = trim($_POST['price3']);
@@ -147,9 +148,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </div>
 
     <div class="col-md-12"><span>Precios:</span></div>
-    <div class="col-md-2"><input type="text" name="price1" value="<?= htmlspecialchars($item['price1']) ?>" class="form-control" placeholder="Precio 1. Indicar divisa (€, $)"></div>
-    <div class="col-md-2"><input type="text" name="price2" value="<?= htmlspecialchars($item['price2']) ?>" class="form-control" placeholder="Precio 2. Indicar divisa (€, $)"></div>
-    <div class="col-md-2"><input type="text" name="price3" value="<?= htmlspecialchars($item['price3']) ?>" class="form-control" placeholder="Precio 3. Indicar divisa (€, $)"></div>
+    <div class="col-md-2"><input type="text" name="singlePrice" value="<?= htmlspecialchars($item['singlePrice']) ?>" class="form-control" placeholder="Precio único. Indicar divisa (€, $)"></div>
+    <div class="col-md-2"><input type="text" name="price1" value="<?= htmlspecialchars($item['price1']) ?>" class="form-control" placeholder="Pequeño. Indicar divisa (€, $)"></div>
+    <div class="col-md-2"><input type="text" name="price2" value="<?= htmlspecialchars($item['price2']) ?>" class="form-control" placeholder="Mediano. Indicar divisa (€, $)"></div>
+    <div class="col-md-2"><input type="text" name="price3" value="<?= htmlspecialchars($item['price3']) ?>" class="form-control" placeholder="Grande. Indicar divisa (€, $)"></div>
 
     <div class="col-md-12">
       <label>Imagen actual:</label><br>

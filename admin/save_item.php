@@ -11,6 +11,7 @@ $menu = json_decode(file_get_contents($menu_file), true);
 // === 1. Datos del formulario ===
 $categoria = trim($_POST["categoria"]);
 $nombre = trim($_POST["name"]);
+$precioUnico = trim($_POST["singlePrice"]);
 $precio1 = trim($_POST["price1"]);
 $precio2 = trim($_POST["price2"]);
 $precio3 = trim($_POST["price3"]);
@@ -73,6 +74,7 @@ $nuevo_item = [
     "allergensImg" => $allergens_clean,
     "allergensDes" => $allergensDes,
     "description" => $descripcion,
+    "singlePrice" => $precioUnico,
     "price1" => $precio1,
     "price2" => $precio2,
     "price3" => $precio3,

@@ -199,9 +199,10 @@
                     
                     // === TABLA DE PRECIOS ===
                     let tablaPrecios = '';
-                    if (producto.price1 || producto.price2 || producto.price3) {
+                    if (producto.singlePrice || producto.price1 || producto.price2 || producto.price3) {
                         tablaPrecios = `
                             <table class="tabla-precios mt-2">
+                                ${producto.singlePrice ? `<tr><td></td><td class="text-primary">${producto.singlePrice}</td></tr>` : ''}
                                 ${producto.price1 ? `<tr><td>Pequeño</td><td class="text-primary">${producto.price1}</td></tr>` : ''}
                                 ${producto.price2 ? `<tr><td>Mediano</td><td class="text-primary">${producto.price2}</td></tr>` : ''}
                                 ${producto.price3 ? `<tr><td>Grande</td><td class="text-primary">${producto.price3}</td></tr>` : ''}
