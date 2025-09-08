@@ -8,6 +8,7 @@
             ],
             "allergensDes": "Lactose",
             "description": "Limón con bola de nata",
+            "singlePrice": "",
             "price1": "1,80€",
             "price2": "2,50€",
             "price3": "3,00€",
@@ -19,7 +20,8 @@
             "allergensImg": [],
             "allergensDes": "",
             "description": "GRANIZADO DE CAFE CON BOLA DE HELADO",
-            "price1": "2.6",
+            "singlePrice": "1,50€",
+            "price1": "",
             "price2": "",
             "price3": "",
             "img": ""
@@ -27,5 +29,18 @@
     ],
     "Helados": [],
     "Batidos": [],
-    "Bebidas": []
+    "Bebidas": [
+        {
+            "name": "Refrescos",
+            "alert": "",
+            "allergensImg": [],
+            "allergensDes": "",
+            "description": "Coca cola, Tinto de verano, Cholec, etc.",
+            "singlePrice": "1,50€",
+            "price1": "",
+            "price2": "",
+            "price3": "",
+            "img": ""
+        }
+    ]
 }

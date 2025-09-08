@@ -35,9 +35,11 @@ $allergens = [
     <div class="row g-3">
       <div class="col-md-3"><input type="text" name="categoria" class="form-control" placeholder="Categoría" required></div>
       <div class="col-md-3"><input type="text" name="name" class="form-control" placeholder="Nombre" required></div>
-      <div class="col-md-2"><input type="text" name="price1" class="form-control" placeholder="Precio 1. Indicar divisa (€, $)"></div>
-      <div class="col-md-2"><input type="text" name="price2" class="form-control" placeholder="Precio 2. Indicar divisa (€, $)"></div>
-      <div class="col-md-2"><input type="text" name="price3" class="form-control" placeholder="Precio 3. Indicar divisa (€, $)"></div>
+      <div class="col-md-3"><input type="text" name="singlePrice" class="form-control" placeholder="Precio Único"></div>
+      <div class="col-md-3"><input type="text" name="price1" class="form-control" placeholder="Pequeño. Indicar divisa (€, $)"></div>
+      <div class="col-md-3"><input type="text" name="price2" class="form-control" placeholder="Mediano. Indicar divisa (€, $)"></div>
+      <div class="col-md-3"><input type="text" name="price3" class="form-control" placeholder="Grande. Indicar divisa (€, $)"></div>
+      <div class="col-md-3"><p style="color: red;">Si rellena precio único no rellene los demás</p></div>
       <div class="col-md-12"><input type="text" name="description" class="form-control" placeholder="Descripción"></div>
       <div class="col-md-6"><input type="text" name="alert" class="form-control" placeholder="Alerta (ej: 'Casero', 'Nuevo', 'Recomendado', 'Casero y Nuevo')"></div>
       <div class="col-md-6"><input type="text" name="allergensDes" class="form-control" placeholder="Descripción alérgenos">
@@ -74,7 +76,7 @@ $allergens = [
           <span>
             <img src="../<?= $item['img'] ?>" alt="" width="50" class="me-2">
             <strong><?= htmlspecialchars($item['name']) ?></strong> - 
-            <?= $item['price1'] ?> <?= $item['price2'] ?> <?= $item['price3'] ?>
+            <?= $item['singlePrice'] ?> <?= $item['price1'] ?> <?= $item['price2'] ?> <?= $item['price3'] ?>
             <!-- Mostrar imágenes de alérgenos -->
             <?php 
             if (!empty($item['allergensImg'])) {
